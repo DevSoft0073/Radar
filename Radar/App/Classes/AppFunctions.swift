@@ -12,6 +12,7 @@ import UIKit
 enum AppStoryboard : String {
     case Auth
     case Home
+    case Main
 }
 
 extension AppStoryboard {

@@ -14,5 +14,9 @@ class ForgotPasswordVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func submitButtonAction(_ sender: Any) {
+        let vc = HomeVC.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

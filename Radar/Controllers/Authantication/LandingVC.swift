@@ -15,15 +15,14 @@ class LandingVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signInButtonAction(_ sender: Any) {
+        let vc = SignInVC.instantiate(fromAppStoryboard: .Auth)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
+    
+    @IBAction func signUpButtonAction(_ sender: Any) {
+        let vc = SignUpVC.instantiate(fromAppStoryboard: .Auth)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
