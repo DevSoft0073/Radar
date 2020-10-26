@@ -20,4 +20,11 @@ class SignInVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        let vc = SignUpVC.instantiate(fromAppStoryboard: .Auth)
+        self.navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
 }

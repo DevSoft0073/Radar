@@ -19,4 +19,8 @@ class SignUpVC: UIViewController {
         let vc = HomeVC.instantiate(fromAppStoryboard: .Home)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func signInButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
