@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		32CDC632A4F5E00CF73477EC /* Pods_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F9F4313A06636A25F2CE23 /* Pods_Radar.framework */; };
 		95B6D544DDA529746C2C6987 /* Pods_RadarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA394CFEC14C9955464C819 /* Pods_RadarTests.framework */; };
+		B321E4AB254839F2004B4BBC /* AddTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4AA254839F2004B4BBC /* AddTicketsVC.swift */; };
+		B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */; };
+		B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4B425483A37004B4BBC /* AddEvent.swift */; };
+		B321E4BA25483A5A004B4BBC /* EventDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */; };
 		B37402B225407DA2006A6826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37402B125407DA2006A6826 /* AppDelegate.swift */; };
 		B37402B425407DA2006A6826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37402B325407DA2006A6826 /* SceneDelegate.swift */; };
 		B37402BB25407DA3006A6826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37402BA25407DA3006A6826 /* Assets.xcassets */; };
@@ -108,6 +112,10 @@
 		4EA394CFEC14C9955464C819 /* Pods_RadarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F8E0C46C660BF719C8C1B /* Pods-Radar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radar.release.xcconfig"; path = "Target Support Files/Pods-Radar/Pods-Radar.release.xcconfig"; sourceTree = "<group>"; };
 		AEBD74758B1B57D3499D6D94 /* Pods-Radar-RadarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radar-RadarUITests.release.xcconfig"; path = "Target Support Files/Pods-Radar-RadarUITests/Pods-Radar-RadarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B321E4AA254839F2004B4BBC /* AddTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketsVC.swift; sourceTree = "<group>"; };
+		B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketsVC.swift; sourceTree = "<group>"; };
+		B321E4B425483A37004B4BBC /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
+		B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDashboardVC.swift; sourceTree = "<group>"; };
 		B37402AE25407DA2006A6826 /* Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37402B125407DA2006A6826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37402B325407DA2006A6826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -335,6 +343,10 @@
 				B3D4B3C92543A37B00BD61D2 /* NotificationVC.swift */,
 				B3D4B3D02543A39F00BD61D2 /* BroadcastVC.swift */,
 				B3D4B3D72543A3B200BD61D2 /* SearchVC.swift */,
+				B321E4AA254839F2004B4BBC /* AddTicketsVC.swift */,
+				B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */,
+				B321E4B425483A37004B4BBC /* AddEvent.swift */,
+				B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -707,10 +719,12 @@
 				B3C20C0B25425C3D0074266E /* FloatRatingView.swift in Sources */,
 				B37402B225407DA2006A6826 /* AppDelegate.swift in Sources */,
 				B39E99632540ADC70018EB1A /* Constant.swift in Sources */,
+				B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */,
 				B3C20BC7254226420074266E /* SignUpVC.swift in Sources */,
 				B3C20BEB254252830074266E /* AppFunctions.swift in Sources */,
 				B3D4B3C32543A36800BD61D2 /* MyEventVC.swift in Sources */,
 				B39E99B525421FBC0018EB1A /* SignInVC.swift in Sources */,
+				B321E4AB254839F2004B4BBC /* AddTicketsVC.swift in Sources */,
 				B39E995D2540AD980018EB1A /* HelperMethods.swift in Sources */,
 				B3C20BEC254252830074266E /* Reachability.swift in Sources */,
 				B39E995A2540AD980018EB1A /* ChangeBottamColor.swift in Sources */,
@@ -719,10 +733,12 @@
 				B3C20BED254252830074266E /* AppConstants.swift in Sources */,
 				B3D4B36A254355C800BD61D2 /* SideMenuVC.swift in Sources */,
 				B3D4B36F25435BBE00BD61D2 /* HomeVC.swift in Sources */,
+				B321E4BA25483A5A004B4BBC /* EventDashboardVC.swift in Sources */,
 				B3C20BF8254252DF0074266E /* PickerManager.swift in Sources */,
 				B39E99AE25421F730018EB1A /* LandingVC.swift in Sources */,
 				B39E99642540ADC70018EB1A /* AFWrapperClass.swift in Sources */,
 				B37402B425407DA2006A6826 /* SceneDelegate.swift in Sources */,
+				B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */,
 				B39E995C2540AD980018EB1A /* UIComponentsExtension.swift in Sources */,
 				B3D4B3CA2543A37B00BD61D2 /* NotificationVC.swift in Sources */,
 			);
