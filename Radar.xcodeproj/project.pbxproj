@@ -13,6 +13,10 @@
 		B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */; };
 		B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4B425483A37004B4BBC /* AddEvent.swift */; };
 		B321E4BA25483A5A004B4BBC /* EventDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */; };
+		B324528E25499F4B00B38AB2 /* ETA_MAPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324528D25499F4B00B38AB2 /* ETA_MAPVC.swift */; };
+		B324529325499F5F00B38AB2 /* RadarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324529225499F5F00B38AB2 /* RadarVC.swift */; };
+		B324529825499F8100B38AB2 /* ViewEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324529725499F8100B38AB2 /* ViewEventVC.swift */; };
+		B324529E25499FAA00B38AB2 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324529D25499FAA00B38AB2 /* SettingVC.swift */; };
 		B37402B225407DA2006A6826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37402B125407DA2006A6826 /* AppDelegate.swift */; };
 		B37402B425407DA2006A6826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37402B325407DA2006A6826 /* SceneDelegate.swift */; };
 		B37402BB25407DA3006A6826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37402BA25407DA3006A6826 /* Assets.xcassets */; };
@@ -116,6 +120,10 @@
 		B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketsVC.swift; sourceTree = "<group>"; };
 		B321E4B425483A37004B4BBC /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
 		B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDashboardVC.swift; sourceTree = "<group>"; };
+		B324528D25499F4B00B38AB2 /* ETA_MAPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETA_MAPVC.swift; sourceTree = "<group>"; };
+		B324529225499F5F00B38AB2 /* RadarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarVC.swift; sourceTree = "<group>"; };
+		B324529725499F8100B38AB2 /* ViewEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventVC.swift; sourceTree = "<group>"; };
+		B324529D25499FAA00B38AB2 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		B37402AE25407DA2006A6826 /* Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37402B125407DA2006A6826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37402B325407DA2006A6826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +222,14 @@
 				34BEA45C5F02537AD88AA0FB /* Pods-RadarTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B324529C25499F9900B38AB2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B324529D25499FAA00B38AB2 /* SettingVC.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		B37402A525407DA2006A6826 = {
@@ -337,6 +353,7 @@
 		B39E99522540A6D30018EB1A /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				B324529C25499F9900B38AB2 /* Setting */,
 				B3D4B369254355C800BD61D2 /* SideMenuVC.swift */,
 				B3D4B36E25435BBE00BD61D2 /* HomeVC.swift */,
 				B3D4B3C22543A36800BD61D2 /* MyEventVC.swift */,
@@ -347,6 +364,9 @@
 				B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */,
 				B321E4B425483A37004B4BBC /* AddEvent.swift */,
 				B321E4B925483A5A004B4BBC /* EventDashboardVC.swift */,
+				B324528D25499F4B00B38AB2 /* ETA_MAPVC.swift */,
+				B324529225499F5F00B38AB2 /* RadarVC.swift */,
+				B324529725499F8100B38AB2 /* ViewEventVC.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -714,10 +734,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D4B3D82543A3B200BD61D2 /* SearchVC.swift in Sources */,
+				B324529E25499FAA00B38AB2 /* SettingVC.swift in Sources */,
 				B3D4B3D12543A39F00BD61D2 /* BroadcastVC.swift in Sources */,
 				B39E995B2540AD980018EB1A /* Activityloader.swift in Sources */,
 				B3C20C0B25425C3D0074266E /* FloatRatingView.swift in Sources */,
 				B37402B225407DA2006A6826 /* AppDelegate.swift in Sources */,
+				B324529325499F5F00B38AB2 /* RadarVC.swift in Sources */,
 				B39E99632540ADC70018EB1A /* Constant.swift in Sources */,
 				B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */,
 				B3C20BC7254226420074266E /* SignUpVC.swift in Sources */,
@@ -725,6 +747,7 @@
 				B3D4B3C32543A36800BD61D2 /* MyEventVC.swift in Sources */,
 				B39E99B525421FBC0018EB1A /* SignInVC.swift in Sources */,
 				B321E4AB254839F2004B4BBC /* AddTicketsVC.swift in Sources */,
+				B324528E25499F4B00B38AB2 /* ETA_MAPVC.swift in Sources */,
 				B39E995D2540AD980018EB1A /* HelperMethods.swift in Sources */,
 				B3C20BEC254252830074266E /* Reachability.swift in Sources */,
 				B39E995A2540AD980018EB1A /* ChangeBottamColor.swift in Sources */,
@@ -738,6 +761,7 @@
 				B39E99AE25421F730018EB1A /* LandingVC.swift in Sources */,
 				B39E99642540ADC70018EB1A /* AFWrapperClass.swift in Sources */,
 				B37402B425407DA2006A6826 /* SceneDelegate.swift in Sources */,
+				B324529825499F8100B38AB2 /* ViewEventVC.swift in Sources */,
 				B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */,
 				B39E995C2540AD980018EB1A /* UIComponentsExtension.swift in Sources */,
 				B3D4B3CA2543A37B00BD61D2 /* NotificationVC.swift in Sources */,
