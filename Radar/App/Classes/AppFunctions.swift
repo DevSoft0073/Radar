@@ -12,6 +12,7 @@ import UIKit
 enum AppStoryboard : String {
     case Auth
     case Home
+    case Settings
     case Main
 }
 
@@ -57,3 +58,63 @@ extension UIView {
     }
 }
 
+
+
+extension CATransition {
+    
+    //New viewController will appear from bottom of screen.
+    func segueFromBottom() -> CATransition {
+        self.duration = 0.375 //set the duration to whatever you'd like.
+        self.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        self.type = CATransitionType.moveIn
+        self.subtype = CATransitionSubtype.fromTop
+        return self
+    }
+    //New viewController will appear from top of screen.
+    func segueFromTop() -> CATransition {
+        self.duration = 0.375 //set the duration to whatever you'd like.
+        self.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        self.type = CATransitionType.moveIn
+        self.subtype = CATransitionSubtype.fromBottom
+        return self
+    }
+    //New viewController will appear from left side of screen.
+    func segueFromLeft() -> CATransition {
+        self.duration = 0.1 //set the duration to whatever you'd like.
+        self.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        self.type = CATransitionType.moveIn
+        self.subtype = CATransitionSubtype.fromLeft
+        return self
+    }
+    //New viewController will pop from right side of screen.
+    func popFromRight() -> CATransition {
+        self.duration = 0.1 //set the duration to whatever you'd like.
+        self.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        self.type = CATransitionType.reveal
+        self.subtype = CATransitionSubtype.fromRight
+        return self
+    }
+}
+
+extension UIViewController {
+    
+    open func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, pushing: Bool, completion: (() -> Void)? = nil) {
+        
+        if pushing {
+            
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = CATransitionType.push
+            transition.subtype = CATransitionSubtype.fromLeft
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            view.window?.layer.add(transition, forKey: kCATransition)
+            viewControllerToPresent.modalPresentationStyle = .fullScreen
+            self.present(viewControllerToPresent, animated: false, completion: completion)
+            
+        } else {
+            self.present(viewControllerToPresent, animated: flag, completion: completion)
+        }
+        
+    }
+    
+}

@@ -14,6 +14,7 @@ target 'Radar' do
     pod 'SDWebImage', '~> 4.0'
     pod 'FBSDKLoginKit'
     pod 'GoogleSignIn'
+    pod 'Hero'
 
   target 'RadarTests' do
     inherit! :search_paths

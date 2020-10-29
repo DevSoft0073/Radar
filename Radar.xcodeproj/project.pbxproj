@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		32CDC632A4F5E00CF73477EC /* Pods_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F9F4313A06636A25F2CE23 /* Pods_Radar.framework */; };
 		95B6D544DDA529746C2C6987 /* Pods_RadarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA394CFEC14C9955464C819 /* Pods_RadarTests.framework */; };
+		B30E3545254A9EC600DDDE7C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30E3544254A9EC600DDDE7C /* Settings.storyboard */; };
+		B30E354A254AA0FF00DDDE7C /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E3549254AA0FF00DDDE7C /* EditProfileVC.swift */; };
+		B30E354F254AA13700DDDE7C /* EventBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E354E254AA13700DDDE7C /* EventBoardVC.swift */; };
+		B30E3554254AA14700DDDE7C /* EventFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E3553254AA14700DDDE7C /* EventFeedVC.swift */; };
+		B30E3559254AA15800DDDE7C /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E3558254AA15800DDDE7C /* ChangePasswordVC.swift */; };
+		B30E355E254AA18900DDDE7C /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E355D254AA18900DDDE7C /* ChangeLanguageVC.swift */; };
 		B321E4AB254839F2004B4BBC /* AddTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4AA254839F2004B4BBC /* AddTicketsVC.swift */; };
 		B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */; };
 		B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321E4B425483A37004B4BBC /* AddEvent.swift */; };
@@ -116,6 +122,12 @@
 		4EA394CFEC14C9955464C819 /* Pods_RadarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		544F8E0C46C660BF719C8C1B /* Pods-Radar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radar.release.xcconfig"; path = "Target Support Files/Pods-Radar/Pods-Radar.release.xcconfig"; sourceTree = "<group>"; };
 		AEBD74758B1B57D3499D6D94 /* Pods-Radar-RadarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radar-RadarUITests.release.xcconfig"; path = "Target Support Files/Pods-Radar-RadarUITests/Pods-Radar-RadarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B30E3544254A9EC600DDDE7C /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		B30E3549254AA0FF00DDDE7C /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		B30E354E254AA13700DDDE7C /* EventBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBoardVC.swift; sourceTree = "<group>"; };
+		B30E3553254AA14700DDDE7C /* EventFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFeedVC.swift; sourceTree = "<group>"; };
+		B30E3558254AA15800DDDE7C /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		B30E355D254AA18900DDDE7C /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
 		B321E4AA254839F2004B4BBC /* AddTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketsVC.swift; sourceTree = "<group>"; };
 		B321E4AF25483A10004B4BBC /* BuyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketsVC.swift; sourceTree = "<group>"; };
 		B321E4B425483A37004B4BBC /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
@@ -228,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				B324529D25499FAA00B38AB2 /* SettingVC.swift */,
+				B30E3558254AA15800DDDE7C /* ChangePasswordVC.swift */,
+				B30E355D254AA18900DDDE7C /* ChangeLanguageVC.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 				B39E99A32540B31C0018EB1A /* Auth.storyboard */,
 				B37402BC25407DA3006A6826 /* LaunchScreen.storyboard */,
 				B3C20BFE254255F40074266E /* Home.storyboard */,
+				B30E3544254A9EC600DDDE7C /* Settings.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +382,9 @@
 				B324528D25499F4B00B38AB2 /* ETA_MAPVC.swift */,
 				B324529225499F5F00B38AB2 /* RadarVC.swift */,
 				B324529725499F8100B38AB2 /* ViewEventVC.swift */,
+				B30E3549254AA0FF00DDDE7C /* EditProfileVC.swift */,
+				B30E354E254AA13700DDDE7C /* EventBoardVC.swift */,
+				B30E3553254AA14700DDDE7C /* EventFeedVC.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -552,6 +570,7 @@
 				B3C20C2D254263E90074266E /* Raleway-SemiBold.ttf in Resources */,
 				B3C20C2A254263E90074266E /* Raleway-Regular.ttf in Resources */,
 				B3C20C21254263E90074266E /* Raleway-Light.ttf in Resources */,
+				B30E3545254A9EC600DDDE7C /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,12 +756,14 @@
 				B324529E25499FAA00B38AB2 /* SettingVC.swift in Sources */,
 				B3D4B3D12543A39F00BD61D2 /* BroadcastVC.swift in Sources */,
 				B39E995B2540AD980018EB1A /* Activityloader.swift in Sources */,
+				B30E354F254AA13700DDDE7C /* EventBoardVC.swift in Sources */,
 				B3C20C0B25425C3D0074266E /* FloatRatingView.swift in Sources */,
 				B37402B225407DA2006A6826 /* AppDelegate.swift in Sources */,
 				B324529325499F5F00B38AB2 /* RadarVC.swift in Sources */,
 				B39E99632540ADC70018EB1A /* Constant.swift in Sources */,
 				B321E4B525483A37004B4BBC /* AddEvent.swift in Sources */,
 				B3C20BC7254226420074266E /* SignUpVC.swift in Sources */,
+				B30E354A254AA0FF00DDDE7C /* EditProfileVC.swift in Sources */,
 				B3C20BEB254252830074266E /* AppFunctions.swift in Sources */,
 				B3D4B3C32543A36800BD61D2 /* MyEventVC.swift in Sources */,
 				B39E99B525421FBC0018EB1A /* SignInVC.swift in Sources */,
@@ -756,7 +777,9 @@
 				B3C20BED254252830074266E /* AppConstants.swift in Sources */,
 				B3D4B36A254355C800BD61D2 /* SideMenuVC.swift in Sources */,
 				B3D4B36F25435BBE00BD61D2 /* HomeVC.swift in Sources */,
+				B30E3554254AA14700DDDE7C /* EventFeedVC.swift in Sources */,
 				B321E4BA25483A5A004B4BBC /* EventDashboardVC.swift in Sources */,
+				B30E355E254AA18900DDDE7C /* ChangeLanguageVC.swift in Sources */,
 				B3C20BF8254252DF0074266E /* PickerManager.swift in Sources */,
 				B39E99AE25421F730018EB1A /* LandingVC.swift in Sources */,
 				B39E99642540ADC70018EB1A /* AFWrapperClass.swift in Sources */,
@@ -765,6 +788,7 @@
 				B321E4B025483A10004B4BBC /* BuyTicketsVC.swift in Sources */,
 				B39E995C2540AD980018EB1A /* UIComponentsExtension.swift in Sources */,
 				B3D4B3CA2543A37B00BD61D2 /* NotificationVC.swift in Sources */,
+				B30E3559254AA15800DDDE7C /* ChangePasswordVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
