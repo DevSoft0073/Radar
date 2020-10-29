@@ -8,7 +8,7 @@
 import UIKit
 import Hero
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, CAAnimationDelegate {
     
     var imgArray = [String]()
     override func viewDidLoad() {
@@ -18,10 +18,22 @@ class HomeVC: UIViewController {
     }
     @IBAction func openMenu(_ sender: Any) {
         
+//        let vc = SideMenuVC.instantiate(fromAppStoryboard: .Home)
+//        self.navigationController?.pushViewController(vc, animated: true)
         
         let vc = SideMenuVC.instantiate(fromAppStoryboard: .Home)
-        let nvc = UINavigationController(rootViewController: vc)
-        present(nvc, animated: false, pushing: true, completion: nil)
+        let transition = CATransition.init()
+        transition.duration = 0.45
+        transition.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.default)
+        transition.type = CATransitionType.push //Transition you want like Push, Reveal
+        transition.subtype = CATransitionSubtype.fromLeft // Direction like Left to Right, Right to Left
+        transition.delegate = self
+        view.window!.layer.add(transition, forKey: kCATransition)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = SideMenuVC.instantiate(fromAppStoryboard: .Home)
+//        let nvc = UINavigationController(rootViewController: vc)
+//        present(nvc, animated: false, pushing: true, completion: nil)
         
 //        Hero.shared.defaultAnimation = HeroDefaultAnimationType.cover(direction: .right)
 //
