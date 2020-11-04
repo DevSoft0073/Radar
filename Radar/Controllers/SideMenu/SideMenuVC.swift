@@ -66,6 +66,30 @@ extension SideMenuVC : UITableViewDelegate, UITableViewDataSource{
         cell.nameLbl.text = namesArray[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            let vc = SettingVC.instantiate(fromAppStoryboard: .Settings)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 2{
+            let vc = SearchVC.instantiate(fromAppStoryboard: .Auth)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 3{
+            let vc = SignUpVC.instantiate(fromAppStoryboard: .Auth)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 4{
+            let vc = SignUpVC.instantiate(fromAppStoryboard: .Auth)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 5{
+            let vc = SignUpVC.instantiate(fromAppStoryboard: .Auth)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 6{
+            
+        }else if indexPath.row == 7{
+            
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }

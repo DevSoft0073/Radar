@@ -15,6 +15,10 @@ class SignInVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func forgotPassword(_ sender: Any) {
+        let vc = ForgotPasswordVC.instantiate(fromAppStoryboard: .Auth)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func logInButtonAction(_ sender: Any) {
         let vc = HomeVC.instantiate(fromAppStoryboard: .Home)
         self.navigationController?.pushViewController(vc, animated: true)
